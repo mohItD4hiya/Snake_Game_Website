@@ -14,6 +14,6 @@ A classic Snake Game built using web technologies with enhanced gameplay feature
 - CSS
 - JavaScript
 
-#### Overview
+#### Preview
 
-This project is a fun implementation of the classic Snake Game with modern features like level progression and speed scaling. It’s designed to improve user engagement while demonstrating core JavaScript game logic and DOM manipulation.
+You can preview the website from here [Snake Game](https://mohitd4hiya.github.io/Snake_Game_Website/)

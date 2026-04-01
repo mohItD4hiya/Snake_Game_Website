@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNAKE — Arcade Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="particles"></canvas>
+<div class="wrapper">
+  <!-- Header -->
+  <div class="header">
+    <div class="title">SNAKE</div>
+    <div class="subtitle">ARCADE EDITION </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-label">SCORE</div>
+      <div class="stat-value" id="score">0</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <div class="stat-label">HIGH SCORE</div>
+      <div class="stat-value" id="highScore">0</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <div class="stat-label">LEVEL</div>
+      <div class="stat-value" id="level">1</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="speed-bar-wrap">
+      <div class="speed-label">SPEED</div>
+      <div class="speed-pips" id="speedPips">
+        <div class="pip active"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arena -->
+  <div class="arena" id="arena">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Start Screen -->
+    <div class="overlay" id="startScreen">
+      <div class="overlay-title green">PRESS PLAY<br>TO START</div>
+      <div class="overlay-msg">USE ARROW KEYS OR WASD<br>TO CONTROL THE SNAKE</div>
+      <button class="btn" id="startBtn"><span>▶ START GAME</span></button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div class="overlay hidden" id="gameOverScreen">
+      <div class="overlay-title pink">GAME OVER</div>
+      <div class="final-score-label">YOUR SCORE</div>
+      <div class="final-score-value" id="finalScore">0</div>
+      <button class="btn" id="restartBtn"><span>↺ PLAY AGAIN</span></button>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls-hint">
+    <div class="key-hint"><span class="key">↑↓←→</span> or <span class="key">WASD</span> MOVE</div>
+    <div class="key-hint"><span class="key">P</span> PAUSE</div>
+    <div class="key-hint"><span class="key">R</span> RESTART</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
